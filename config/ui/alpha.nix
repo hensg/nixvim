@@ -17,7 +17,7 @@
         };
         type = "text";
         val = [
-          "              git@github.com:hensg          "
+          "    Neovim  "
         ];
       }
       (padding 2)

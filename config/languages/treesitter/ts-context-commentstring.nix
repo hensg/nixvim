@@ -1,6 +1,6 @@
 {
   plugins.ts-context-commentstring = {
-    enable = true;
+    enable = false;
     disableAutoInitialization = false;
   };
 }
