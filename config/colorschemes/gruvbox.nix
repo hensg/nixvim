@@ -1,8 +1,8 @@
 {
   colorschemes = {
-    base16 = {
+    gruvbox = {
       enable = false;
-      colorscheme = "gruvbox-dark-hard";
+      settings.terminal_colors = true;
     };
   };
 }

@@ -6,8 +6,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "altermo";
         repo = "ultimate-autopair.nvim";
-        rev = "25c13e0ce167db0255456cac10158b27d2be30c0";
-        sha256 = "0bsxfj6g8fii9nn92vl15hdhafx3fikgiz4srr7y10pxz01c5s4c";
+        rev = "53ed7c65e466963c916251f9ce6df7dd3685dc36";
+        sha256 = "t51hB9ZjpOdhdOItXpf+dpvCZsdKpustSUiXS3UIwdY=";
       };
     })
   ];

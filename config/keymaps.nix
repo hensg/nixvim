@@ -1,7 +1,13 @@
 # Thanks for the keybinds primeagen and folke!
 {
   globals.mapleader = " ";
+  # TODO: Move general mappings to which-key
   keymaps = [
+    {
+      mode = "n";
+      key = "<leader>dd";
+      action = ":lua require('duck').hatch('🦀')<cr>";
+    }
     # General maps
     {
       mode = "n";
@@ -22,7 +28,10 @@
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>g";
       action = "+git";
     }
@@ -46,19 +55,28 @@
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>d";
       action = "+debug";
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>c";
       action = "+code";
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>t";
       action = "+test";
     }
@@ -164,6 +182,26 @@
         desc = "Split window right";
       };
     }
+
+    # {
+    #   mode = "n";
+    #   key = "<leader>-";
+    #   action = "<C-W>s";
+    #   options = {
+    #     silent = true;
+    #     desc = "Split window below";
+    #   };
+    # }
+
+    # {
+    #   mode = "n";
+    #   key = "<leader>|";
+    #   action = "<C-W>v";
+    #   options = {
+    #     silent = true;
+    #     desc = "Split window right";
+    #   };
+    # }
 
     {
       mode = "n";
@@ -370,7 +408,10 @@
 
     # Copy stuff to system clipboard with <leader> + y or just y to have it just in vim
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>y";
       action = "\"+y";
       options = {
@@ -379,7 +420,10 @@
     }
 
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>Y";
       action = "\"+Y";
       options = {
@@ -389,7 +433,10 @@
 
     # Delete to void register
     {
-      mode = ["n" "v"];
+      mode = [
+        "n"
+        "v"
+      ];
       key = "<leader>D";
       action = "\"_d";
       options = {
@@ -404,6 +451,14 @@
       action = "<Esc>";
     }
 
+    {
+      mode = "n";
+      key = "<leader>bd";
+      action = "<cmd>Bdelete<cr>";
+      options = {
+        desc = "Delete buffer with bufdelete";
+      };
+    }
   ];
   extraConfigLua = ''
     local notify = require("notify")

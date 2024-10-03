@@ -5,7 +5,7 @@
     globalstatus = true;
     ignoreFocus = ["neo-tree"];
     extensions = ["fzf"];
-    theme = "auto";
+    #theme = "auto";
     componentSeparators = {
       left = "|";
       right = "|";

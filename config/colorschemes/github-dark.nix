@@ -1,7 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
-      name = "my-plugin";
+      name = "github-nvim-theme";
       src = pkgs.fetchFromGitHub {
         owner = "projekt0n";
         repo = "github-nvim-theme";
@@ -21,6 +22,6 @@
         functions = 'italic',
       },
     })
-    vim.cmd('colorscheme github_dark_high_contrast')
+    vim.cmd('colorscheme github_dark_default')
   '';
 }

@@ -1,8 +1,8 @@
 {
   colorschemes = {
-    base16 = {
+    ayu = {
       enable = false;
-      colorscheme = "gruvbox-dark-hard";
+      settings.mirage = false;
     };
   };
 }

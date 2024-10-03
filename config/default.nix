@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   # Import all your configuration modules here
   imports = [
     ./sets.nix
@@ -22,15 +23,22 @@
     #./languages/treesitter/ts-autotag.nix
     #./languages/treesitter/ts-context-commentstring.nix
 
+    ./colorschemes/ayu.nix
     ./colorschemes/base16.nix
     ./colorschemes/catppuccin.nix
     ./colorschemes/rose-pine.nix
+    ./colorschemes/gruvbox.nix
     ./colorschemes/kanagawa.nix
-    (import ./colorschemes/github-dark.nix {inherit pkgs;})
+    ./colorschemes/melange.nix
+    ./colorschemes/nordic.nix
+    ./colorschemes/monokai.nix
+    (import ./colorschemes/github-dark.nix { inherit pkgs; })
+    (import ./colorschemes/mellow.nix { inherit pkgs; })
 
     ./lsp/conform.nix
     ./lsp/fidget.nix
     ./lsp/lsp.nix
+    #./lsp/lspsaga.nix
     ./lsp/trouble.nix
 
     ./pluginmanagers/lazy.nix
@@ -47,7 +55,9 @@
     ./ui/nvim-notify.nix
     ./ui/nui.nix
 
-    #./utils/better-escape.nix
+    ./utils/duck.nix
+    ./utils/better-escape.nix
+    ./utils/bufdelete.nix
     #./utils/neocord.nix
     ./utils/hardtime.nix
     ./utils/illuminate.nix
@@ -62,10 +72,12 @@
     ./utils/plenary.nix
     ./utils/project-nvim.nix
     #./utils/todo-comments.nix
+    ./utils/markdown.nix
     ./utils/toggleterm.nix
     ./utils/ultimate-autopair.nix
     ./utils/undotree.nix
     ./utils/whichkey.nix
     ./utils/wilder.nix
+    ./utils/yanky.nix
   ];
 }

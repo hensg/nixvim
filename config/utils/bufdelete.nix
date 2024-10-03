@@ -1,0 +1,1 @@
+{ plugins.bufdelete.enable = true; }

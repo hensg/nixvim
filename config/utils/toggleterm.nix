@@ -13,7 +13,7 @@
       '';
       open_mapping = "[[<A-i>]]";
       hide_numbers = true;
-      shade_terminals = true;
+      shade_terminals = false;
       start_in_insert = true;
       terminal_mappings = true;
       persist_mode = true;

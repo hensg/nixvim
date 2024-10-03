@@ -1,8 +1,7 @@
 {
   colorschemes = {
-    base16 = {
+    melange = {
       enable = false;
-      colorscheme = "gruvbox-dark-hard";
     };
   };
 }

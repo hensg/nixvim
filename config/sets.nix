@@ -1,11 +1,11 @@
-{
-  pkgs,
-  lib,
-  config,
-  ...
+{ pkgs
+, lib
+, config
+, ...
 }: {
   config = {
     opts = {
+      # background = "light";
       # Enable relative line numbers
       number = true;
       relativenumber = true;
@@ -47,7 +47,7 @@
       updatetime = 100; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
-      completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
+      completeopt = [ "menuone" "noselect" "noinsert" ]; # mostly just for cmp
 
       # Enable persistent undo history
       swapfile = false;

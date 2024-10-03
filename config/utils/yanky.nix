@@ -1,5 +1,5 @@
 {
-  plugins.ts-autotag = {
+  plugins.yanky = {
     enable = true;
   };
 }
