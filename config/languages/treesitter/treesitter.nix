@@ -7,7 +7,7 @@
       hightlight.enable = true;
       nixvimInjections = true;
 
-      ensure_installed = "all";
+      # ensure_installed = "all";
       sync_install = false;
 
       highlight = {
