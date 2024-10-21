@@ -5,7 +5,7 @@
     lsp = {
       enable = true;
       capabilities = "offsetEncoding = 'utf-16'";
-      inlayHints = false;
+      inlayHints = true;
       servers = {
         clangd = {
           enable = true;
