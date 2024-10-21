@@ -42,7 +42,6 @@
       java = [ "google-java-format" ];
       python = [ "black" ];
       lua = [ "stylua" ];
-      nix = [ "nixpkgs-fmt" ];
       markdown = [
         [
           "prettierd"

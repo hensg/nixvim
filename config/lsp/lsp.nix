@@ -33,7 +33,6 @@
         };
         nil-ls = {
           enable = true;
-          settings.formatting.command = [ "nixpkgs-fmt" ];
         };
         eslint = {
           enable = false;
