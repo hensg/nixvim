@@ -33,9 +33,7 @@
         };
         nil-ls = {
           enable = true;
-        };
-        eslint = {
-          enable = false;
+          settings.formatting.command = [ "nixpkgs-fmt" ];
         };
         pyright = {
           enable = true;
